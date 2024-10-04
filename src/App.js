@@ -224,7 +224,7 @@ useEffect( () => {
                 <Route path='/search/:name' element={<SearchProfile />} />
                 <Route path='/contactProfile/:name' element={<ContactProfile />} />
                 {/* Fallback route to redirect to HomePage */}
-                <Route path="*" element={<HomeProvider skt={socket} ><Home skt={socket}/></HomeProvider>} />
+                <Route element={<HomeProvider skt={socket} ><Home skt={socket}/></HomeProvider>} />
                 {/* <Route path=':name' element={<SinglePerson skt={socket} />} /> */}
 {/*                 <Route path='friends'>
                 </Route> */}

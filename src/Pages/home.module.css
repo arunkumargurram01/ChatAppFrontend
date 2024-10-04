@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Link{
+    color: black;
+    text-decoration: none;
+}
+
+.homeMdiv{
+    width: 90%;
+    height: 80vh;
+    border:;
+    margin: 1% auto;
+    overflow-y:auto ;
+}
+
+@media (max-width: 500px) {
+    .homeMdiv{
+        width: 95%;
+        height: 80vh;
+        margin: 1% auto;
+        overflow-y:auto ;
+    }
+  }
+
+.homeMdiv::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+
+#mdiv{
+    width: 90%;
+    height: auto;
+    border:1px solid black;
+    text-align: center;
+    margin: 1% auto;
+}
+#MProfileDiv{
+    width: 80%;
+    height: auto;
+    border: ;
+    margin: 2% auto;
+}
+
+.IPdiv{
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgb(151, 250, 3);
+    background-color: rgb(151, 250, 3);;
+    display: flex;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 6px;
+}
+
+.IPdiv:hover{
+    /* background-color: rgb(99, 244, 244); */
+    background-color: #009FBD;
+    cursor: pointer;
+}
+
+
+
+.ppic{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 2%;
+    background-color: aliceblue;
+    /* display: inline; */
+}
+.pname{
+    width: 50%;
+    height: 30px;
+    display: inline;
+    border: ;
+    font-size: 20px;
+    text-align: left;
+    margin: 10px auto;
+    margin-left: 30px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+#Link{
+    text-decoration: none;
+}
+
+
+
+/* Typing animation keyframes */
+@keyframes typingDots {
+    0% {
+        content: '';
+    }
+    33% {
+        content: '.';
+    }
+    66% {
+        content: '..';
+    }
+    100% {
+        content: '...';
+    }
+}
+
+/* Apply animation to the dots span */
+.typing::after {
+    content: '';
+    animation: typingDots 1s steps(4, end) infinite;
+}

@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#mdiv{
+    width: 100%;
+    height: 80vh;
+    margin: 0% auto;
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+}
+
+.SPdiv{
+
+}
+
+.IPdiv{
+    width: 95%;
+    height: 80px;
+    background-color: #3dbdd7;
+    border-radius: 6px;
+    margin: 2% auto;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .IPdiv{
+        width: 100%;
+        height: 80px;
+    }
+}
+
+.flex {
+    width: 20%;
+    height: auto;
+    display: flex;
+    margin-left:5%;
+    border: ;
+}
+
+.flexItem {
+    flex-shrink: 0;
+}
+
+#ppdiv {
+    flex-basis: 20%;
+    display: grid;
+    justify-content: center;
+    margin-top: 2%;
+}
+#ppic{
+    width: 50px;
+    height: 50px;
+    border:1px solid black;
+    border-radius: 50%;
+    margin-left: ;
+    margin-top: ;
+    background-color: aliceblue;
+}
+
+#textDiv{
+    width: 40%;
+    display: grid;
+    text-align: left;
+}
+#pname {
+    flex-basis: 60%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1%;
+
+}
+
+#typingdiv{
+    width: 27%;
+    height: 16px;
+    text-decoration: none;
+
+}
+
+#offline{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 2% auto;
+}
+#online{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(47, 255, 0);
+    border-radius: 50%;
+    margin: 2% auto;
+}
+#msg{
+    width: 60%;
+    height: 18px;
+    margin-left: ;
+    position: relative;
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden;    /* Hide the overflowing text */
+    text-overflow: ellipsis; /* Display ellipsis (...) */
+}
+
+
+/* Apply animation to the dots span */
+.typing::after {
+    content: '';
+    animation: typingDots 1s steps(4, end) infinite;
+    text-decoration: none;
+}
+
+.typingoff{
+    text-decoration: none;
+    display: none;
+}
+
+/* Single compo Styles */
+.SPdiv{
+    display: grid;
+    width: 100%;
+    height: 60px;
+    background-color: #3dbdd7;
+    display: flex;
+    padding: ;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0% 1%;
+}
+
+.ppic{
+    width: 40px;
+    height: 40px;
+    border:1px solid black;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin-left: 2%;
+}
+.ppImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.pname {
+    flex-basis: 50%;
+    height: 45px;
+    margin-left: 5%;
+    text-align: center;
+}
+#name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.typingdiv{
+    width: 20%;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    margin: 0% auto;
+}
+
+.typing{
+    text-align: center;
+    margin-top: -1%;
+}
+
+
+
+
+/* Chat Section */
+/* Chat section styles in singleCompo */
+#chatSection{
+    display: block;
+    box-sizing: border-box;
+    height: 90%;
+    width: 95%;
+    border:2px solid rgb(38, 40, 38);
+    border-radius: 6px;
+    margin: 1% auto;
+}
+@media (max-width: 600px) {
+    #chatSection{
+        display: block;
+        box-sizing: border-box;
+        height:90%;
+        width: 95%;
+        border:2px solid rgb(38, 40, 38);
+        border-radius: 6px;
+        margin: 1% auto;
+    }
+}
+#chats{
+    width: 100%;
+    height: 90%;
+    margin: 0.7% auto;
+    overflow-y: scroll;
+    /* border-bottom: 2px solid black; */
+}
+
+#chats::-webkit-scrollbar {
+    display: none;
+  }
+#msgDiv{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1300px) {
+    #msgDiv{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -1%;
+    }
+  }
+
+.dateBlock{
+    width: fit-content;
+    background-color: rgba(127, 255, 212, 1);
+    font-size: 14px;
+    padding: 1% 2%;
+    border-radius: 6px;
+    font-weight: ;
+    margin: 0% auto;
+    position: sticky;
+    top : 3px;
+    opacity: ;
+}
+#input{
+    width: 200px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: ;
+    padding: 0px ;
+    margin-top: 0%;
+}
+#btn{
+    height: 24px;
+    color: aliceblue;
+    background-color: blueviolet;
+    margin: 0px 1%;
+    border: blueviolet;
+    border-radius: 6px;
+    padding: 0px 2%;
+    font-weight: 600;
+}
+
+.time{
+    width: 43px;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-top: 1%;
+    position: relative;
+    left: 7px;
+}
+
+#SPinput{
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0px 1%;
+}
+#SPbtn{
+    height: 28px;
+    color: aliceblue;
+    background-color: blueviolet;
+    margin: 0px 1%;
+    border: blueviolet;
+    border-radius: 6px;
+    padding: 0px 2%;
+    font-weight: 600;
+}
+
+
+
+
+/* Msgs styles */
+.span1{
+    min-width: 10px;
+    max-width: 40%;
+    display: inline-block;
+    color: aliceblue;
+    border: 1px solid blueviolet;
+    background-color: blueviolet;
+    margin: 1px 0px;
+    padding:.2% 1%;
+    padding-bottom:.2% ;
+    border-radius:4px;
+}
+
+/* .recivedMsgs{
+    list-style-type: none;
+    width: auto;
+    height: auto;
+    margin: 1% 2%;
+} */
+
+.span2{
+    min-width: 10px;
+    max-width: 40%;
+    height: auto;
+    display: inline-block;
+    color: aliceblue;
+    border: 1px solid orange;
+    background-color: orange;
+    padding:.2% 2%;
+    padding-bottom:.2% ;
+    border-radius:4px;
+    margin-right: 1%;
+    margin: 0.5% 1%;
+} 
+
+.li1 {
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color:;
+    margin: 0% auto;
+    overflow: visible;
+}
+  
+.li2{
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0.% auto;
+    padding-left: 1%;
+}
+
+
+
+/* Typing animation keyframes */
+@keyframes typingDots {
+    0% {
+        content: '';
+    }
+    33% {
+        content: '.';
+    }
+    66% {
+        content: '..';
+    }
+    100% {
+        content: '...';
+    }
+}
